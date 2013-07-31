@@ -1,0 +1,2 @@
+run test prog with LD_PRELOAD 
+    LD_PRELOAD=./libfopen.so ./test_fopen
