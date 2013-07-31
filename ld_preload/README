@@ -1,2 +1,9 @@
+    LD_PRELOAD lists shared libraries with functions that override the standard set, just as /etc/ld.so.preload does. These are implemented by the loader /lib/ld-linux.so. If you want to override just a few selected functions, you can do this by creating an overriding object file and setting LD_PRELOAD; the functions in this object file will override just those functions leaving others as they were.
+
+LD_PRELOAD
+    http://blog.csdn.net/haoel/article/details/1602108
+
+/etc/ld.so.preload
+
 run test prog with LD_PRELOAD 
     LD_PRELOAD=./libfopen.so ./test_fopen
